@@ -102,7 +102,7 @@ const outputLines = extractedLines.map((entry, index) => {
 });
 
 // Write to output file
-const outputFile = path.join(directory, 'output.txt');
+const outputFile = path.join(directory, 'output.csv');
 fs.writeFileSync(outputFile, outputLines.join('\n'));
 
 console.log(`Sorted output saved to: ${outputFile}`);
